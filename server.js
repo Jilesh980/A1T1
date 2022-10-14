@@ -19,7 +19,8 @@ const cors = require("cors");
 const MoviesDB = require("./modules/moviesDB.js");
 const db = new MoviesDB();
 
-require("dotenv").config({path:'./.env'});
+const dotenv = require("dotenv");
+dotenv.config({path:"./.env"});
 
 // Middlewares 
 app.use(express.json());
